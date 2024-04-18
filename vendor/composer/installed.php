@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'auth0-samples/auth0-php-web-app',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '6a962889bec4d74145cfa72e77c48a393461ebac',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -29,9 +29,9 @@
             'dev_requirement' => true,
         ),
         'auth0-samples/auth0-php-web-app' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '6a962889bec4d74145cfa72e77c48a393461ebac',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
