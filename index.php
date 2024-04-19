@@ -27,22 +27,23 @@ define('ROUTE_URL_LOGOUT', ROUTE_URL_INDEX . '/logout');
 //check for session
 Route::add('/', function() use ($auth0) {
     $session = $auth0->getCredentials();
-  
+
     if ($session === null) {
-      // The user isn't logged in.
-      include 'login_prompt.php';
-      return;
+        // The user isn't logged in.
+        include 'login_prompt.php';
+        return;
     }
-  
+
     // The user is logged in.
-    echo '<pre>';
-    print_r($session->user);
-    
-    echo '</pre>';
-  
-    echo '<p>You can now <a href="/logout">log out</a>.</p>';
+    // echo '<pre>';
+    // print_r($session->user);
+    // echo '</pre>';
+
+    // echo '<p>You can now <a href="/logout">log out</a>.</p>';
+
+    // Include the file for active sessions only
     include 'active_session.php';
-  });
+});
 
 //logging in
 Route::add('/login', function() use ($auth0) {

@@ -1,0 +1,64 @@
+/* General Body and HTML Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Engaging gradient background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+/* Header styling to be consistent across all pages */
+.site-header {
+    padding: 80px 20px;
+    background: rgba(0, 0, 0, 0.4); /* Slight dark overlay to enhance text visibility */
+    margin-bottom: 50px; /* Separation from main content */
+    color: #d59ff5; /* Purple-toned pink for better visibility */
+    text-align: center; /* Centers the header text */
+}
+
+/* Container for centric content alignment */
+.container {
+    max-width: 960px;
+    margin: auto;
+    text-align: center; /* Center-align main content */
+}
+
+/* Navigation bar styles */
+nav {
+    display: flex;
+    justify-content: center; /* Center navigation links */
+    padding-bottom: 20px;
+}
+
+/* Main content area styling */
+main {
+    padding: 20px;
+    color: #d59ff5; /* Ensures text is the same purple-toned pink */
+}
+
+/* Unified button styling across the site */
+button, .login-btn {
+    background-color: #7d0cc8; /* Consistent button color */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover, .login-btn:hover {
+    background-color: #3c107a;
+    transform: scale(1.1); /* Enhance the button on hover for interaction feedback */
+    color: #d59ff5;
+}
+
+/* Link styling to enhance readability and hover effect */
+a {
+    color: #d59ff5; /* Purple-toned pink for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3c107a; /* Darker purple on hover */
+}
