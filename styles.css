@@ -1,53 +1,62 @@
-/* Basic Reset */
-body, h1, button {
+body, html {
+    height: 100%;
     margin: 0;
-    padding: 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Engaging gradient background */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
 }
 
-body {
-    background-color: #f4f4f4;
-    color: #333;
+.site-header {
+    padding: 80px 20px;
+    background: rgba(0, 0, 0, 0.4); /* Slight dark overlay to enhance text visibility */
+    margin-bottom: 50px; /* Separation from login box */
+    color: #d59ff5; /* Purple-toned pink for better visibility */
 }
 
-header {
-    background-color: #7934FA;  /* Lavender to deep purple gradient */
-    color: #fff;
-    padding: 20px 40px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+.container {
+    max-width: 960px;
+    margin: auto;
 }
 
-h1 {
-    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-
-main {
+.login-container {
+    width: 100%;
+    flex-grow: 1;
     display: flex;
-    justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    justify-content: center;
 }
 
-.login-section {
-    text-align: center;
-    margin-top: 20px;
+.login-box {
+    padding: 40px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2); /* Translucent background to focus attention on button and text */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    width: 300px;
 }
 
-button {
-    background-color: #4CAF50; /* Green shade */
-    color: white;
+.login-title, .login-subtitle {
+    color: #d59ff5; /* Purple-toned pink for text to enhance readability */
+}
+
+.login-btn {
+    
+    color: #7d0cc8;
     border: none;
-    padding: 15px 30px;
-    font-size: 18px;
+    padding: 12px 24px;
+    font-size: 1.2rem;
     cursor: pointer;
-    border-radius: 8px;
-    outline: none;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-button:hover {
-    background-color: #45a049;
-    transform: translateY(-2px);
+.login-btn:hover {
+    background-color: #3c107a;
+    transform: scale(1.1); /* Enhance the button on hover for interaction feedback */
+    color: #d59ff5;
+}
+a {
+    color: #d59ff5; /* Purple-toned pink for text to enhance readability */
+    text-decoration: none;
+}
+a:hover {
+    color: #d59ff5;
 }
